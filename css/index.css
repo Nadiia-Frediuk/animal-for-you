@@ -4,11 +4,49 @@
     font-family: 'Roboto', sans-serif;
     --main-color: black; 
  } 
- header .logo {
+ body {
+   max-width: 980px;
+   margin: auto;
+ }
+ header .logo
+ 
+ {
     font-size: 3.5rem;
     text-transform: uppercase;
     text-align: center;
  }
+
+ .breeds article {
+   border: solid var(--main-color);
+   padding: 5px;
+   width: 100%;
+ }
+ .breeds article img {
+   display: block;
+   width: 50%;
+ }
+ 
+ .button 
+  {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.35 em 0.2em;
+    border: 0.1em solid #FFFFFF;
+    margin: 0 0.3rem 0;
+    border-radius: 0.12em;
+    color:#FFFFFF;
+    text-decoration: none;
+    transition: color 0.75;
+    background-color: transparent;
+
+   }
+   .button :hover {
+      color:black;
+      background-color: #FFFFFF;
+      cursor: pointer;
+   }
+ 
  header .menu a {
     display: block;
     color: var(--main-color);
@@ -30,5 +68,12 @@
       display: flex;
       justify-content: space-around;
       align-items: center; 
+      flex: 1;
+   }
+   header {
+      background-image: url(../img/dogs/dogteam.jpeg);
+      min-height: 500px;
+      background-size: cover;
+      background-position: center;
    }
  }
