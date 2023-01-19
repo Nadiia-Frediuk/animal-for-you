@@ -5,8 +5,8 @@
     --main-color: black; 
  } 
  body {
-   max-width: 980px;
-   margin: auto;
+   max-width: 100%;
+   margin: auto;  
  }
  header .logo
  
@@ -18,12 +18,21 @@
 
  .breeds article {
    border: solid var(--main-color);
+   border-right-width: 0;
    padding: 5px;
    width: 100%;
  }
  .breeds article img {
-   display: block;
-   width: 50%;
+   
+   width: 90%;
+ }
+
+ @media (min-width: 560px) {
+   .breeds {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      
+   }
  }
  
  .button 
