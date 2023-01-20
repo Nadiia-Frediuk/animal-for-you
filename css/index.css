@@ -3,6 +3,7 @@
  :root {
     font-family: 'Roboto', sans-serif;
     --main-color: black; 
+    scroll-behavior: smooth;
  } 
  body {
    max-width: 100%;
